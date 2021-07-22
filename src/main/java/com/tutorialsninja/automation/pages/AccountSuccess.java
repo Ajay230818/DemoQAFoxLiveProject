@@ -15,4 +15,5 @@ public class AccountSuccess {
 	
 	@FindBy(linkText="Success")
 	public static WebElement SuccessBreadScrumb;
+	
 }
