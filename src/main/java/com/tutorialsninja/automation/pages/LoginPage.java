@@ -32,5 +32,11 @@ public class LoginPage {
 		Elements.TypeText(PassWord, Password);
 		Elements.click(LoginButton);
 	}
+	
+	public static void dologin(){
+		Elements.TypeText(LoginPage.UserName,Base.reader.getUserName() );
+		Elements.TypeText(LoginPage.PassWord,Base.reader.getPassword() );
+		Elements.click(LoginPage.LoginButton);
+	}
 
 }

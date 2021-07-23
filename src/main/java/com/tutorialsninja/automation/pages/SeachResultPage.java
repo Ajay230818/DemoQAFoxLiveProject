@@ -12,10 +12,14 @@ public class SeachResultPage {
 		PageFactory.initElements(Base.driver, this);
 	}
 	
-	@FindBy(linkText="Samsung SyncMaster 941BW")
+	@FindBy(css="input[name='search']")
 	public static WebElement SamSungSearch;
 	
 	@FindBy(css="input[id='button-search']+h2+p")
-	public static WebElement ProdNotInCart;
+	public static WebElement ProdNotInCart; 
+	
+	@FindBy(xpath="//span[text()='Add to Cart']")
+	public static WebElement AddtoCart;  
+	
 	
 }
